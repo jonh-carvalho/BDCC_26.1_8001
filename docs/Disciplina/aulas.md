@@ -2,7 +2,7 @@
 
 |Aula                 | Conteúdo |
 | ----------------------------------------------------------------| |
-Aula 01 - 06/08/2025 | :material-check: [Introdução](../Disciplina/docs/aula01/intro.pdf) a Cloud Computing |
+Aula 01 - 06/08/2025 | :material-check: Introdução a Cloud Computing |
 <!--
 Aula 02 - 13/08/2025 | :material-check: [Computação Visual](../Disciplina/docs/aula02/intro_computacao_visual.pdf) e [Bibliotecas Gráficas](../Disciplina/docs/aula02/bibliotecas_graficas.pdf) <br> <iframe src="../.././cg.html" width="100%" height="170px"></iframe>|
 Aula 03 - 20/08/2025 | :material-check: [Imagens](../Disciplina/docs/aula03/imagens.pdf) <br> :material-check: [Dispositivos e Espaço de Cores](../Disciplina/docs/aula03/imagens_cg.pdf) <br> :material-check: [Visão Humana](../Disciplina/docs/aula03/imagens_m.pdf)  |

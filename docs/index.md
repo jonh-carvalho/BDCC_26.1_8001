@@ -5,22 +5,20 @@ hide:
     - template: home.html
 ---
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0vAhWtIJbFY?si=fW0HKC4ouPYfh2tP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## :material-github:{ .lg .right } **Computação Gráfica**: IBM0168/8001
+## :material-github:{ .lg .right } **Big Data & Cloud Computing**: 
 
 ---
 
-Disciplina que apresenta os Conceitos da Computação Gráfica.
+Disciplina que apresenta os Conceitos de Big Data & Cloud Computing.
 
 ## Ferramentas
 
-**Linguagens**: Python, OpenGL, Blender e Javascript
+**Linguagens**: Python
 
-**Tecnologias**: Visual Studio Code e Github
+**Tecnologias**: Aws, Visual Studio Code e Github
 
 As APs e ACs deverão ser enviadas no github.
-
 
 
 </div>
