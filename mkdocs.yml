@@ -9,10 +9,12 @@ nav:
   - Disciplina:
       - Aulas: Disciplina/aulas.md
       - Ambiente: Disciplina/ambiente.md
-      - Notebook:
-        - Index: Disciplina/notebook/index.md
-        - Notebook 1: Disciplina/notebook/notebook1.md
-        - Notebook 2: Disciplina/notebook/notebook2.md
+      - Roteiro:
+        - Aws: Disciplina/roteiros/aws.md
+      #- Notebook:
+        #- Index: Disciplina/notebook/index.md
+        #- Notebook 1: Disciplina/notebook/notebook1.md
+        #- Notebook 2: Disciplina/notebook/notebook2.md
 
   - Avaliações:
       - AP1: Avalia/ap1.md
