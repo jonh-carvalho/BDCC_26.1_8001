@@ -5,6 +5,7 @@
 Aula 01 - 25/02/2026 | :material-check: [Introdução](../Disciplina/docs/aula01/Fundamentos-de-Cloud-Computing-Introducao-a-Computacao-em-Nuvem.pptx) a Cloud Computing <br> :material-check: [Modelos ](../Disciplina/docs/aula01/Modelos-de-Servico-em-Nuvem-IaaS-PaaS-e-SaaS-Descomplicados.pptx) de Cloud Computing|
 Aula 02 - 04/03/2026 | :material-check: Introdução ao [Big Data](..//Disciplina/docs/aula02/Introducao-ao-Big-Data-Os-5-Vs-e-Desafios-do-Processamento-em-Larga-Escala.pptx) <br> :material-check: [Visão Geral ](../Disciplina/docs/aula02/Fundamentos-de-Cloud-Computing-Visao-Geral-da-AWS.pptx)|
 Aula 03 - 11/03/2026 | :material-check: [Principais Serviços Aws](../Disciplina/docs/aula02/Principais-Servicos-AWS-Computacao-Armazenamento-e-Redes.pptx)|
+Aula 04 - 18/03/2025 | :material-check: [Computação](https://awseducate.instructure.com/courses/941) |
 <!--
 Aula 02 - 13/08/2025 | :material-check: [Computação Visual](../Disciplina/docs/aula02/intro_computacao_visual.pdf) e [Bibliotecas Gráficas](../Disciplina/docs/aula02/bibliotecas_graficas.pdf) <br> <iframe src="../.././cg.html" width="100%" height="170px"></iframe>|
 Aula 03 - 20/08/2025 | :material-check: [Imagens](../Disciplina/docs/aula03/imagens.pdf) <br> :material-check: [Dispositivos e Espaço de Cores](../Disciplina/docs/aula03/imagens_cg.pdf) <br> :material-check: [Visão Humana](../Disciplina/docs/aula03/imagens_m.pdf)  |
