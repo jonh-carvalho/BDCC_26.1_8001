@@ -658,6 +658,39 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cenario-a-conectando-do-windows-usando-putty" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenário A: Conectando do Windows (usando PuTTY)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cenario-b-conectando-do-macos-ou-linux-usando-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenário B: Conectando do macOS ou Linux (usando Terminal)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cenario-c-conectando-do-windows-macos-ou-linux-usando-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenário C: Conectando do Windows, macOS ou Linux (usando VS Code)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cenário C: Conectando do Windows, macOS ou Linux (usando VS Code)">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
   <a href="#parte-4-explorando-e-finalizando" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1190,7 +1223,7 @@
 <hr />
 <h4 id="parte-3-conectando-se-a-instancia-via-ssh"><strong>Parte 3: Conectando-se à Instância via SSH</strong><a class="headerlink" href="#parte-3-conectando-se-a-instancia-via-ssh" title="Permanent link">&para;</a></h4>
 <p>Agora que a instância está rodando e temos o IP público, vamos nos conectar a ela usando a chave privada.</p>
-<p><strong>Cenário A: Conectando do Windows (usando PuTTY)</strong></p>
+<h3 id="cenario-a-conectando-do-windows-usando-putty"><strong>Cenário A: Conectando do Windows (usando PuTTY)</strong><a class="headerlink" href="#cenario-a-conectando-do-windows-usando-putty" title="Permanent link">&para;</a></h3>
 <p>O PuTTY não entende nativamente o formato <code>.pem</code>. Precisamos converter a chave para o formato <code>.ppk</code> usando o PuTTYgen .</p>
 <p><strong>Passo 1: Converter a chave .pem para .ppk</strong></p>
 <ol>
@@ -1215,7 +1248,7 @@
 <li>Na primeira vez que você se conectar a esta instância, uma alerta de segurança aparecerá sobre a chave do host não ser conhecida. Clique em <strong>"Accept"</strong> para continuar .</li>
 <li>Uma janela de terminal será aberta e você estará logado dentro da sua instância EC2!</li>
 </ol>
-<p><strong>Cenário B: Conectando do macOS ou Linux (usando Terminal)</strong></p>
+<h3 id="cenario-b-conectando-do-macos-ou-linux-usando-terminal"><strong>Cenário B: Conectando do macOS ou Linux (usando Terminal)</strong><a class="headerlink" href="#cenario-b-conectando-do-macos-ou-linux-usando-terminal" title="Permanent link">&para;</a></h3>
 <p><strong>Passo 1: Ajustar permissões da chave</strong></p>
 <ol>
 <li>Abra o <strong>Terminal</strong>.</li>
@@ -1234,7 +1267,7 @@
 <li>Na primeira conexão, você verá uma mensagem perguntando se deseja continuar conectando, pois a autenticidade do host não pode ser estabelecida. Digite <strong><code>yes</code></strong> e pressione Enter .</li>
 <li>Pronto! Você estará conectado ao terminal da sua instância EC2.</li>
 </ol>
-<p><strong>Cenário C: Conectando do Windows, macOS ou Linux (usando VS Code)</strong></p>
+<h3 id="cenario-c-conectando-do-windows-macos-ou-linux-usando-vs-code"><strong>Cenário C: Conectando do Windows, macOS ou Linux (usando VS Code)</strong><a class="headerlink" href="#cenario-c-conectando-do-windows-macos-ou-linux-usando-vs-code" title="Permanent link">&para;</a></h3>
 <p>VS Code oferece uma forma moderna e integrada de se conectar a servidores remotos via SSH, permitindo editar arquivos e executar comandos diretamente do editor.</p>
 <p><strong>Pré-requisitos:</strong>
 - VS Code instalado em seu computador.
@@ -1272,7 +1305,7 @@
     - <code>df -h</code> (disk free): Mostra o espaço em disco.
     - <code>sudo yum update -y</code> (atualiza o sistema - específico para Amazon Linux).</p>
 <p><strong>IMPORTANTE: Como parar a instância para não gastar créditos</strong>
-Lembre-se: no AWS Educate, você tem créditos limitados. A instância <code>t2.micro</code> em execução consome esses créditos. Quando não estiver usando, é fundamental <strong>parar (stop)</strong> a instância .</p>
+Lembre-se: no AWS Educate, você tem créditos limitados. A instância <code>t2.micro</code> em execução consome esses créditos. Quando não estiver usando, é fundamental <strong>parar (stop)</strong> a instância.</p>
 <ol>
 <li>No Console AWS, vá para a lista de instâncias EC2.</li>
 <li>Selecione sua instância.</li>
