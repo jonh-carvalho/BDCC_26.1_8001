@@ -5,7 +5,7 @@
 Aula 01 - 25/02/2026 | :material-check: [Introdução](../Disciplina/docs/aula01/Fundamentos-de-Cloud-Computing-Introducao-a-Computacao-em-Nuvem.pptx) a Cloud Computing <br> :material-check: [Modelos ](../Disciplina/docs/aula01/Modelos-de-Servico-em-Nuvem-IaaS-PaaS-e-SaaS-Descomplicados.pptx) de Cloud Computing|
 Aula 02 - 04/03/2026 | :material-check: Introdução ao [Big Data](..//Disciplina/docs/aula02/Introducao-ao-Big-Data-Os-5-Vs-e-Desafios-do-Processamento-em-Larga-Escala.pptx) <br> :material-check: [Visão Geral ](../Disciplina/docs/aula02/Fundamentos-de-Cloud-Computing-Visao-Geral-da-AWS.pptx)|
 Aula 03 - 11/03/2026 | :material-check: [Principais Serviços Aws](../Disciplina/docs/aula02/Principais-Servicos-AWS-Computacao-Armazenamento-e-Redes.pptx)|
-Aula 04 - 18/03/2025 | :material-check: [Computação](https://awseducate.instructure.com/courses/941) <br> :material=check: Roteiro EC2 |
+Aula 04 - 18/03/2025 | :material-check: [Computação](https://awseducate.instructure.com/courses/941) <br> :material-check: Roteiro EC2 |
 Aula 05 - 25/03/2026 | :material-check: Roteiro Nginx |
 Aula 06 - 01/04/2026 | :material-check: [Introdução ao Armazenamento na Nuvem](https://awseducate.instructure.com/courses/920) |
 <!--
