@@ -2,6 +2,78 @@
 
 Este roteiro cria um **projeto Django REST inicial simples com SQLite** que funciona perfeitamente no Elastic Beanstalk (versão 2026), **projetado especificamente para facilitar migrações futuras** para RDS e S3. 
 
+### 🛠️ Parte 0: Configuração do Ambiente (VS Code + Python + Django REST)
+
+#### Passo 1: Instalar Python 3.12+
+
+1. Instale o Python 3.12 ou superior.
+2. Verifique no terminal:
+
+```bash
+python --version
+```
+
+#### Passo 2: Preparar VS Code
+
+1. Instale o Visual Studio Code.
+2. Em Extensions, instale:
+   - `Python` (Microsoft)
+   - `Pylance` (Microsoft)
+
+#### Passo 3: Criar pasta do projeto e abrir no VS Code
+
+```bash
+mkdir catalogo-produtos
+cd catalogo-produtos
+code .
+```
+
+#### Passo 4: Criar e ativar virtual environment
+
+```bash
+python -m venv .venv
+```
+
+Ativação:
+
+```bash
+# Linux/Mac
+source .venv/bin/activate
+
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+```
+
+#### Passo 5: Selecionar interpretador no VS Code
+
+1. `Ctrl+Shift+P` -> `Python: Select Interpreter`
+2. Escolha o interpretador da `.venv`
+
+#### Passo 6: Instalar dependências iniciais
+
+```bash
+pip install django djangorestframework pillow gunicorn
+```
+
+#### Passo 7: Criar projeto Django e app REST
+
+```bash
+django-admin startproject catalogo .
+python manage.py startapp produtos
+```
+
+#### Passo 8: Inicializar banco local e validar subida
+
+```bash
+python manage.py migrate
+python manage.py runserver
+```
+
+Valide:
+
+1. `http://127.0.0.1:8000/`
+2. `http://127.0.0.1:8000/admin/`
+
 ### 📋 Parte 1: Criação do Projeto Local (30 minutos)
 
 #### Passo 1: Estrutura Básica do Projeto
@@ -293,6 +365,13 @@ Verifique:
 3. Teste o upload de uma imagem via POST (use Postman ou curl)
 
 ### ☁️ Parte 4: Deploy no Elastic Beanstalk 2026 (20 minutos)
+
+#### Passo0: Configuração da Política IAM para Deploy
+
+Entre no IAM, selecione o usuário que usará para deploy e adicione a seguinte política gerenciada:
+
+- Add Permissions > Attach policies diretly > Pesquise por "Elastic Beanstalk" e selecione:
+  - `AdministratorAccess-AWSElasticBeanstalk`
 
 #### Passo 1: Preparar o Pacote para Deploy
 
