@@ -9,6 +9,17 @@ Aula 04 - 18/03/2025 | :material-check: [Computação](https://awseducate.instru
 Aula 05 - 25/03/2026 | :material-check: Roteiro Nginx |
 Aula 06 - 01/04/2026 | :material-check: [Introdução ao Armazenamento na Nuvem](https://awseducate.instructure.com/courses/920) |
 Aula 07 - 08/04/2026 | :material-check: [Introdução ao Elastic Beanstalk](https://aws.amazon.com/pt/elasticbeanstalk/?trk=d04539bf-5991-4c63-855b-38fdf1088189&sc_channel=ps&ef_id=CjwKCAjw-dfOBhAjEiwAq0RwI1XSEG0z2u9ry089mTTUbIOHFD6l7WagRPOwtsEuSCHaukBAEe3scxoCcoUQAvD_BwE:G:s&s_kwcid=AL!4422!3!798517445697!p!!g!!elastic%20beanstalk!23600692275!190643552861&gad_campaignid=23600692275&gbraid=0AAAAADjHtp9BFn7Xzl0jEbWdUOPc34Af5&gclid=CjwKCAjw-dfOBhAjEiwAq0RwI1XSEG0z2u9ry089mTTUbIOHFD6l7WagRPOwtsEuSCHaukBAEe3scxoCcoUQAvD_BwE) |
+Aula 09 - 15/04/2026 | :material-check:  AP1 |
+Aula 10 - 22/04/2026 | :material-check: |
+Aula 14 - 20/05/2026 | :material-check: |
+Aula 15 - 27/05/2026 | :material-check: |
+Aula 16 - 03/06/2026 | :material-check: |
+Aula 17 - 10/06/2026 | :material-check: |
+Aula 18 - 17/06/2026 | :material-check: AP2 |
+Aula 19 - 24/06/2026 | :material-check:  |
+Aula 20 - 01/07/2026 | :material-check: AS |
+
+
 <!--
 Aula 02 - 13/08/2025 | :material-check: [Computação Visual](../Disciplina/docs/aula02/intro_computacao_visual.pdf) e [Bibliotecas Gráficas](../Disciplina/docs/aula02/bibliotecas_graficas.pdf) <br> <iframe src="../.././cg.html" width="100%" height="170px"></iframe>|
 Aula 03 - 20/08/2025 | :material-check: [Imagens](../Disciplina/docs/aula03/imagens.pdf) <br> :material-check: [Dispositivos e Espaço de Cores](../Disciplina/docs/aula03/imagens_cg.pdf) <br> :material-check: [Visão Humana](../Disciplina/docs/aula03/imagens_m.pdf)  |
