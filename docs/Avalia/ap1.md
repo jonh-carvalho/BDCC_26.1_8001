@@ -6,12 +6,12 @@ Adicionar uma nova classe ao aplicativo Django Rest existente, que já possui um
 
 ### Entrega - 15/04/2026
 
-- **Não é necessário a presença do Grupo no Lab 308** se até o início da aula o projeto já estiver  atualizado e o deploy realizado. 
+- **Não é necessário a presença no Lab 308** se até o início da aula o projeto já estiver  atualizado e o deploy realizado. 
 - Repositório Github - Código-fonte do projeto atualizado, incluindo a nova classe e as APIs relacionadas.
 - Instruções claras sobre como configurar e executar o projeto localmente, bem como detalhes sobre as alterações realizadas.
 - Documentação das etapas realizadas para a implementação e deploy.
 - Link para o projeto deployado na AWS Elastic Beanstalk.
-- Publique no Github e me adicione no repositório,  e coloque no readme o link da API da aws "no ar" .
+- Publique no Github e me adicione no repositório, e coloque no readme o link da API da aws "no ar".
 
 
 ### Cenário
