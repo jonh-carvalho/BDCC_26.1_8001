@@ -1,0 +1,1335 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Jonh Carvalho">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/ibmec_icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Plano de Aula - Big Data (Modelo Colunar e Modelo Orientado a Documentos) - BDCC_26.1_8001</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="#FAB90A" data-md-color-accent="#193257">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#plano-de-aula-big-data-modelo-colunar-e-modelo-orientado-a-documentos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BDCC_26.1_8001" class="md-header__button md-logo" aria-label="BDCC_26.1_8001" data-md-component="logo">
+      
+  <img src="../../assets/ibmec_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BDCC_26.1_8001
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Plano de Aula - Big Data (Modelo Colunar e Modelo Orientado a Documentos)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="#FAB90A" data-md-color-accent="#193257"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="#193257" data-md-color-accent="#FAB90A"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="all" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jonh-carvalho/BDCC_26.1_8001" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Disciplina/aulas/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Disciplina
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Avalia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Avaliações
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Disciplina/bibliografia/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Bibliografia
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BDCC_26.1_8001" class="md-nav__button md-logo" aria-label="BDCC_26.1_8001" data-md-component="logo">
+      
+  <img src="../../assets/ibmec_logo.png" alt="logo">
+
+    </a>
+    BDCC_26.1_8001
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jonh-carvalho/BDCC_26.1_8001" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Disciplina
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Disciplina
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Disciplina/aulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aulas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Disciplina/ambiente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ambiente
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Roteiro
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Roteiro
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Disciplina/roteiros/02%20-%20aws/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    01- AWS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Disciplina/roteiros/04%20-%20ec2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    04 - EC2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Disciplina/roteiros/04%20-%20linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    04 - Linux Bash
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Disciplina/roteiros/05%20-%20nginxsite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    05 - Nginx
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Disciplina/roteiros/06%20-%20s3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    06 - S3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Disciplina/roteiros/07%20-%20eb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    07 - BE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Avaliações
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Avaliações
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Avalia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    AC
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            AC
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Avalia/AC01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AC1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Avalia/AC02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AC2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Avalia/AC03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AC3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Avalia/AC04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AC4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AP
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            AP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Avalia/ap1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AP1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Avalia/ap2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AP2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Disciplina/bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bibliografia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="plano-de-aula-big-data-modelo-colunar-e-modelo-orientado-a-documentos">Plano de Aula - Big Data (Modelo Colunar e Modelo Orientado a Documentos)<a class="headerlink" href="#plano-de-aula-big-data-modelo-colunar-e-modelo-orientado-a-documentos" title="Permanent link">&para;</a></h1>
+<h2 id="1-contexto-da-aula">1. Contexto da Aula<a class="headerlink" href="#1-contexto-da-aula" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Disciplina</strong>: Big Data / Bancos NoSQL</li>
+<li><strong>Tema central</strong>: Comparacao entre armazenamento colunar e orientado a documentos</li>
+<li><strong>Base pratica</strong>:</li>
+<li><a href="bigdata/colunar/colunar.ipynb">bigdata/colunar/colunar.ipynb</a></li>
+<li><a href="bigdata/orientadodocumento/odoc.ipynb">bigdata/orientadodocumento/odoc.ipynb</a></li>
+<li><a href="bigdata/colunar/dados_logs.csv">bigdata/colunar/dados_logs.csv</a></li>
+<li><a href="bigdata/colunar/dados_logs.parquet">bigdata/colunar/dados_logs.parquet</a></li>
+<li><a href="bigdata/orientadodocumento/dados_usuarios.json">bigdata/orientadodocumento/dados_usuarios.json</a></li>
+<li><a href="bigdata/orientadodocumento/usuarios_tinydb.json">bigdata/orientadodocumento/usuarios_tinydb.json</a></li>
+</ul>
+<h2 id="2-objetivos-de-aprendizagem">2. Objetivos de Aprendizagem<a class="headerlink" href="#2-objetivos-de-aprendizagem" title="Permanent link">&para;</a></h2>
+<p>Ao final da aula, o estudante devera ser capaz de:</p>
+<ol>
+<li>Diferenciar modelo colunar e modelo orientado a documentos.</li>
+<li>Explicar porque Parquet tende a ser mais eficiente que CSV em analitica.</li>
+<li>Executar consultas analiticas com DuckDB sobre arquivos colunares.</li>
+<li>Inserir, consultar, atualizar e remover documentos com TinyDB/MongoDB.</li>
+<li>Identificar criterios de escolha entre banco relacional, colunar e documento.</li>
+</ol>
+<h2 id="3-pre-requisitos">3. Pre-requisitos<a class="headerlink" href="#3-pre-requisitos" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Python 3.x funcional.</li>
+<li>Bibliotecas:</li>
+<li><code>pandas</code>, <code>numpy</code>, <code>pyarrow</code>, <code>duckdb</code>, <code>matplotlib</code></li>
+<li><code>tinydb</code> (e opcionalmente <code>pymongo</code> + MongoDB local)</li>
+<li>No minimo um notebook executando no VS Code/Jupyter.</li>
+</ul>
+<h2 id="4-duracao-sugerida">4. Duracao Sugerida<a class="headerlink" href="#4-duracao-sugerida" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Total</strong>: 2h40 (pode ser adaptado para 2h ou 4h).</li>
+</ul>
+<h2 id="5-roteiro-de-aula-passo-a-passo">5. Roteiro de Aula (Passo a Passo)<a class="headerlink" href="#5-roteiro-de-aula-passo-a-passo" title="Permanent link">&para;</a></h2>
+<h2 id="bloco-a-abertura-e-alinhamento-15-min">Bloco A - Abertura e alinhamento (15 min)<a class="headerlink" href="#bloco-a-abertura-e-alinhamento-15-min" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Apresentar o problema: diferentes cargas de trabalho exigem diferentes modelos de armazenamento.</li>
+<li>Definir rapidamente:<ul>
+<li>OLTP vs OLAP</li>
+<li>Dados estruturados, semi-estruturados e aninhados</li>
+</ul>
+</li>
+<li>Mostrar o mapa da pasta <a href="bigdata">bigdata</a>.</li>
+</ol>
+<h2 id="bloco-b-pratica-1-modelo-colunar-55-min">Bloco B - Pratica 1: Modelo Colunar (55 min)<a class="headerlink" href="#bloco-b-pratica-1-modelo-colunar-55-min" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Executar os passos de <a href="bigdata/colunar/colunar.ipynb">bigdata/colunar/colunar.ipynb</a>:<ul>
+<li>Geracao ou leitura de dados de log.</li>
+<li>Conversao CSV -&gt; Parquet.</li>
+<li>Consulta SQL com DuckDB.</li>
+</ul>
+</li>
+<li>Coletar evidencias objetivas:<ul>
+<li>Tamanho dos arquivos.</li>
+<li>Tempo de leitura/consulta.</li>
+</ul>
+</li>
+<li>Discussao guiada:<ul>
+<li>Por que leitura de colunas reduz I/O?</li>
+<li>Em quais cenarios o ganho cresce?</li>
+</ul>
+</li>
+<li>Entrega rapida do bloco:<ul>
+<li>Tabela com <code>metrica</code>, <code>csv</code>, <code>parquet</code>, <code>diferenca_percentual</code>.</li>
+</ul>
+</li>
+</ol>
+<h2 id="bloco-c-pratica-2-modelo-orientado-a-documentos-55-min">Bloco C - Pratica 2: Modelo Orientado a Documentos (55 min)<a class="headerlink" href="#bloco-c-pratica-2-modelo-orientado-a-documentos-55-min" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Executar os passos de <a href="bigdata/orientadodocumento/odoc.ipynb">bigdata/orientadodocumento/odoc.ipynb</a>:<ul>
+<li>Geracao de JSON de usuarios com estrutura aninhada.</li>
+<li>Insercao em TinyDB (e opcionalmente MongoDB).</li>
+<li>Consultas por atributo aninhado.</li>
+<li>Atualizacao e exclusao de documentos.</li>
+</ul>
+</li>
+<li>Discussao guiada:<ul>
+<li>Flexibilidade de esquema e evolucao de modelo.</li>
+<li>Trade-off entre flexibilidade e governanca de dados.</li>
+</ul>
+</li>
+<li>Entrega rapida do bloco:<ul>
+<li>Uma consulta por cidade.</li>
+<li>Uma consulta por usuario.</li>
+<li>Uma atualizacao correta de campo aninhado.</li>
+</ul>
+</li>
+</ol>
+<h2 id="bloco-d-comparacao-consolidada-20-min">Bloco D - Comparacao consolidada (20 min)<a class="headerlink" href="#bloco-d-comparacao-consolidada-20-min" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Construir quadro comparativo em sala com 5 eixos:<ul>
+<li>Estrutura de dados</li>
+<li>Performance de leitura analitica</li>
+<li>Facilidade de evolucao de schema</li>
+<li>Complexidade de consulta</li>
+<li>Casos de uso tipicos</li>
+</ul>
+</li>
+<li>Relacionar com servicos AWS:<ul>
+<li>Colunar/analitico: S3 + Athena, Redshift</li>
+<li>Documento: DynamoDB (document-like key-value), DocumentDB/MongoDB</li>
+</ul>
+</li>
+</ol>
+<h2 id="bloco-e-fechamento-e-avaliacao-15-min">Bloco E - Fechamento e avaliacao (15 min)<a class="headerlink" href="#bloco-e-fechamento-e-avaliacao-15-min" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Quiz rapido (5 perguntas objetivas).</li>
+<li>Debrief: quando <strong>nao</strong> usar cada modelo.</li>
+<li>Definicao de atividade pos-aula.</li>
+</ol>
+<h2 id="6-avaliacao">6. Avaliacao<a class="headerlink" href="#6-avaliacao" title="Permanent link">&para;</a></h2>
+<h2 id="formativa-durante-a-aula">Formativa (durante a aula)<a class="headerlink" href="#formativa-durante-a-aula" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Participacao nas discussoes.</li>
+<li>Execucao correta dos notebooks.</li>
+<li>Interpretacao dos resultados de performance.</li>
+</ul>
+<h2 id="somativa-pos-aula">Somativa (pos-aula)<a class="headerlink" href="#somativa-pos-aula" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Mini-relatorio (1 pagina) contendo:</li>
+<li>Comparacao tecnica entre os dois modelos.</li>
+<li>Evidencias coletadas (tempo e tamanho).</li>
+<li>Recomendacao para um cenario real escolhido pelo aluno.</li>
+</ul>
+<h2 id="rubrica-0-a-10">Rubrica (0 a 10)<a class="headerlink" href="#rubrica-0-a-10" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Correta execucao tecnica: 3,0</li>
+<li>Analise critica dos resultados: 3,0</li>
+<li>Justificativa da escolha de tecnologia: 3,0</li>
+<li>Clareza e organizacao: 1,0</li>
+</ol>
+<h2 id="7-abordagens-significantes-faltantes-e-recomendadas">7. Abordagens Significantes Faltantes (e recomendadas)<a class="headerlink" href="#7-abordagens-significantes-faltantes-e-recomendadas" title="Permanent link">&para;</a></h2>
+<p>Com base nos materiais atuais da pasta <a href="bigdata">bigdata</a>, estas abordagens merecem ser adicionadas:</p>
+<ol>
+<li>
+<p><strong>Qualidade de dados e validacao de schema</strong></p>
+<ul>
+<li>Falta checagem de nulos, duplicatas, tipos invalidos e regras de negocio.</li>
+<li>Recomendar uma celula de validacao antes das consultas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Benchmark metodologicamente justo</strong></p>
+<ul>
+<li>Hoje a comparacao CSV vs Parquet e simples.</li>
+<li>Incluir repeticoes, aquecimento de cache e media/desvio padrao para evitar conclusoes enviesadas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Particionamento e compressao em Parquet</strong></p>
+<ul>
+<li>Assunto central em Big Data e nao aparece no roteiro atual.</li>
+<li>Demonstrar particionamento por data/categoria e impacto em scan.</li>
+</ul>
+</li>
+<li>
+<p><strong>Evolucao de schema em documentos</strong></p>
+<ul>
+<li>Mostrar documentos com campos faltantes/adicionados e como tratar no codigo.</li>
+<li>Essencial para cenarios reais de crescimento de produto.</li>
+</ul>
+</li>
+<li>
+<p><strong>Indexacao e custo de consulta</strong></p>
+<ul>
+<li>Em MongoDB/TinyDB, faltou discutir indices e impacto em latencia.</li>
+<li>Em colunar, faltou discutir pushdown, pruning e custo de varredura.</li>
+</ul>
+</li>
+<li>
+<p><strong>Consistencia e integridade em atualizacao aninhada</strong></p>
+<ul>
+<li>O arquivo <a href="bigdata/orientadodocumento/usuarios_tinydb.json">bigdata/orientadodocumento/usuarios_tinydb.json</a> mostra um caso de inconsistência de atualizacao de campo aninhado.</li>
+<li>Incluir atividade de "detectar e corrigir inconsistencias" como objetivo explicito.</li>
+</ul>
+</li>
+<li>
+<p><strong>Conexao com arquitetura em nuvem (AWS)</strong></p>
+<ul>
+<li>Falta um fechamento arquitetural: quando usar S3 + Athena + Glue, quando usar DynamoDB, e limites de cada escolha.</li>
+</ul>
+</li>
+</ol>
+<h2 id="8-extensao-recomendada-opcional-40-min-extra">8. Extensao Recomendada (opcional, 40 min extra)<a class="headerlink" href="#8-extensao-recomendada-opcional-40-min-extra" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Implementar uma pipeline curta:<ul>
+<li>JSON de eventos -&gt; validacao -&gt; armazenamento em Parquet particionado.</li>
+</ul>
+</li>
+<li>Criar 2 consultas:<ul>
+<li>Uma agregacao analitica (colunar).</li>
+<li>Uma busca por perfil/entidade (documento).</li>
+</ul>
+</li>
+<li>Defender arquitetura escolhida em 3 minutos por grupo.</li>
+</ol>
+<h2 id="9-materiais-de-apoio">9. Materiais de Apoio<a class="headerlink" href="#9-materiais-de-apoio" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Notebook colunar: <a href="bigdata/colunar/colunar.ipynb">bigdata/colunar/colunar.ipynb</a></li>
+<li>Notebook documentos: <a href="bigdata/orientadodocumento/odoc.ipynb">bigdata/orientadodocumento/odoc.ipynb</a></li>
+<li>Datasets da pratica:</li>
+<li><a href="bigdata/colunar/dados_logs.csv">bigdata/colunar/dados_logs.csv</a></li>
+<li><a href="bigdata/colunar/dados_logs.parquet">bigdata/colunar/dados_logs.parquet</a></li>
+<li><a href="bigdata/orientadodocumento/dados_usuarios.json">bigdata/orientadodocumento/dados_usuarios.json</a></li>
+<li><a href="bigdata/orientadodocumento/usuarios_tinydb.json">bigdata/orientadodocumento/usuarios_tinydb.json</a></li>
+</ul>
+<h2 id="10-checklist-do-professor">10. Checklist do Professor<a class="headerlink" href="#10-checklist-do-professor" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Conferir bibliotecas instaladas antes da aula.</li>
+<li>Garantir que os notebooks abrem sem erro de kernel.</li>
+<li>Preparar resultado esperado das consultas para comparacao rapida.</li>
+<li>Reservar 15 min finais para reflexao de arquitetura.</li>
+<li>Coletar mini-relatorio com prazo e criterios claros.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright ©️ 2026, Jonh Carvalho
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
