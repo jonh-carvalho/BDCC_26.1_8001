@@ -10,14 +10,17 @@ Aula 05 - 25/03/2026 | :material-check: Roteiro Nginx |
 Aula 06 - 01/04/2026 | :material-check: [Introdução ao Armazenamento na Nuvem](https://awseducate.instructure.com/courses/920) |
 Aula 07 - 08/04/2026 | :material-check: [Introdução ao Elastic Beanstalk](https://aws.amazon.com/pt/elasticbeanstalk/?trk=d04539bf-5991-4c63-855b-38fdf1088189&sc_channel=ps&ef_id=CjwKCAjw-dfOBhAjEiwAq0RwI1XSEG0z2u9ry089mTTUbIOHFD6l7WagRPOwtsEuSCHaukBAEe3scxoCcoUQAvD_BwE:G:s&s_kwcid=AL!4422!3!798517445697!p!!g!!elastic%20beanstalk!23600692275!190643552861&gad_campaignid=23600692275&gbraid=0AAAAADjHtp9BFn7Xzl0jEbWdUOPc34Af5&gclid=CjwKCAjw-dfOBhAjEiwAq0RwI1XSEG0z2u9ry089mTTUbIOHFD6l7WagRPOwtsEuSCHaukBAEe3scxoCcoUQAvD_BwE) |
 Aula 08 - 15/04/2026 | :material-check:  AP1 |
-Aula 09 - 22/04/2026 | :material-check: |
-Aula 10 - 20/05/2026 | :material-check: |
-Aula 11 - 27/05/2026 | :material-check: |
-Aula 12 - 03/06/2026 | :material-check: |
-Aula 13 - 10/06/2026 | :material-check: |
-Aula 14 - 17/06/2026 | :material-check: AP2 |
-Aula 15 - 24/06/2026 | :material-check:  |
-Aula 26 - 01/07/2026 | :material-check: AS |
+Aula 09 - 22/04/2026 | :material-check: Colunar e Orientado a Documentos |
+Aula 10 - 29/04/2026 | :material-check: [RDS](https://awseducate.instructure.com/courses/1119/modules/items/19068) -  MySql |
+Aula 11 - 07/05/2026 | :material-check: |
+Aula 12 - 14/06/2026 | :material-check: |
+Aula 13 - 21/06/2026 | :material-check: |
+Aula 14 - 28/06/2026 | :material-check:  |
+Aula 15 - 04/06/2026 | :material-check:  |
+Aula 16 - 11/06/2026 | :material-check: AP2 |
+Aula 17 - 18/06/2026 | :material-check:  |
+Aula 18 - 25/06/2026 | :material-check: AS |
+
 
 
 <!--
