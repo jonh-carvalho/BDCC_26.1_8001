@@ -89,9 +89,6 @@ DELETE FROM usuarios WHERE id=1;
       ```bash
       # Amazon Linux
       sudo dnf install -y mariadb105
-
-      # Ubuntu/Debian
-      sudo apt update && sudo apt install -y mysql-client
       ```
 
    3. Conecte no Aurora usando o endpoint do cluster:
@@ -113,8 +110,8 @@ DELETE FROM usuarios WHERE id=1;
    **Passo a passo (via computador local):**
    1. Instale o cliente MySQL:
       ```bash
-      # Ubuntu/Debian
-      sudo apt update && sudo apt install -y mysql-client
+      # Amazon Linux
+      sudo dnf install -y mariadb105
 
       # macOS (Homebrew)
       brew install mysql-client
