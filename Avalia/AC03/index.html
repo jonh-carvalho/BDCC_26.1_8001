@@ -950,6 +950,75 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Atividade:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questao-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questão 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questao-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questão 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questao-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questão 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questao-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questão 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questao-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questão 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questao-discursiva-1-cenario-integrador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questão Discursiva 1 - Cenário Integrador
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questao-discursiva-2-cenario-de-migracao-e-decisao-arquitetural" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questão Discursiva 2 - Cenário de Migração e Decisão Arquitetural
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1143,6 +1212,77 @@
 
 <h1 id="avaliacao-continuada-03"><strong>Avaliação Continuada 03</strong><a class="headerlink" href="#avaliacao-continuada-03" title="Permanent link">&para;</a></h1>
 <h2 id="atividade"><strong>Atividade:</strong><a class="headerlink" href="#atividade" title="Permanent link">&para;</a></h2>
+<h3 id="questao-1">Questão 1<a class="headerlink" href="#questao-1" title="Permanent link">&para;</a></h3>
+<p>Uma empresa de e-commerce precisa armazenar o histórico de pedidos dos últimos 5 anos, totalizando cerca de 500 milhões de registros. A equipe de Business Intelligence realizará consultas analíticas complexas envolvendo agregações por região, categoria de produto e período, com foco em performance e baixo custo por consulta.</p>
+<p>Considerando o cenário descrito, qual modelo de banco de dados é mais adequado?</p>
+<p>a) Relacional (tabular), pois garante integridade referencial através de chaves estrangeiras.</p>
+<p>b) Orientado a documentos, pois a flexibilidade de esquema permite armazenar produtos com 
+diferentes atributos.</p>
+<p>c) Colunar, pois é otimizado para consultas analíticas com agregações sobre grandes volumes de dados.</p>
+<p>d) Relacional, pois utiliza SQL que é padrão da indústria para consultas.</p>
+<p>e) Orientado a documentos, pois permite escalabilidade horizontal nativa.</p>
+<h3 id="questao-2">Questão 2<a class="headerlink" href="#questao-2" title="Permanent link">&para;</a></h3>
+<p>Uma startup de desenvolvimento ágil está criando um aplicativo mobile cujo modelo de dados muda frequentemente conforme novos requisitos são descobertos. A aplicação precisa armazenar perfis de usuários com diferentes conjuntos de atributos (ex: alguns têm endereço, outros não; alguns têm preferências de notificação, outros não). A equipe prioriza velocidade de desenvolvimento e facilidade de evolução do esquema.</p>
+<p>Qual modelo de banco de dados é mais adequado para este cenário?</p>
+<p>a) Relacional (tabular), pois permite consultas complexas com JOIN entre tabelas.</p>
+<p>b) Colunar, pois é otimizado para consultas analíticas.</p>
+<p>c) Orientado a documentos, pois suporta esquema flexível e evolui facilmente com a aplicação.</p>
+<p>d) Relacional, pois garante consistência ACID em transações.</p>
+<p>e) Colunar, pois oferece melhor compressão de dados.</p>
+<h3 id="questao-3">Questão 3<a class="headerlink" href="#questao-3" title="Permanent link">&para;</a></h3>
+<p>Uma instituição financeira precisa armazenar dados de transações bancárias onde a consistência dos dados é crítica (não pode haver duplicidade ou inconsistência entre contas). O sistema precisa garantir as propriedades ACID (Atomicidade, Consistência, Isolamento, Durabilidade) em operações que envolvem múltiplas tabelas (ex: débito de uma conta e crédito em outra).</p>
+<p>Considerando os requisitos de consistência e transações, qual modelo de banco de dados é mais adequado?</p>
+<p>a) Orientado a documentos, pois oferece alta escalabilidade horizontal.</p>
+<p>b) Colunar, pois é otimizado para consultas analíticas.</p>
+<p>c) Relacional (tabular), pois suporta transações ACID e integridade referencial nativamente.</p>
+<p>d) Orientado a documentos, pois é mais rápido para operações de leitura.</p>
+<p>e) Colunar, pois permite melhor compressão de dados.</p>
+<h3 id="questao-4">Questão 4<a class="headerlink" href="#questao-4" title="Permanent link">&para;</a></h3>
+<p>Analise as afirmativas sobre modelos de banco de dados:</p>
+<p>I. Bancos de dados colunares (ex: Amazon Redshift) armazenam dados por linha, o que os torna ideais para consultas que acessam todas as colunas de poucas linhas.</p>
+<p>II. Bancos de dados orientados a documentos (ex: DynamoDB) utilizam esquema flexível, permitindo que diferentes documentos tenham estruturas diferentes.</p>
+<p>III. Bancos de dados relacionais (ex: PostgreSQL) são otimizados para consultas analíticas sobre grandes volumes de dados.</p>
+<p>Está correto o que se afirma em:</p>
+<p>a) I, apenas</p>
+<p>b) II, apenas</p>
+<p>c) I e II, apenas</p>
+<p>d) II e III, apenas</p>
+<p>e) I, II e III</p>
+<h3 id="questao-5">Questão 5<a class="headerlink" href="#questao-5" title="Permanent link">&para;</a></h3>
+<p>Uma empresa está migrando seu Data Warehouse para a nuvem AWS. Atualmente, possui 100 TB de dados históricos de vendas e precisa realizar consultas analíticas complexas que envolvem agregações sobre milhões de registros. O requisito principal é performance de consulta com custo controlado.</p>
+<p>Qual serviço AWS é mais adequado para este cenário?</p>
+<p>a) Amazon DynamoDB (orientado a documentos)</p>
+<p>b) Amazon RDS (relacional)</p>
+<p>c) Amazon Redshift (colunar)</p>
+<p>d) Amazon S3 (armazenamento de objetos)</p>
+<p>e) Amazon ElastiCache (cache em memória)</p>
+<hr />
+<h3 id="questao-discursiva-1-cenario-integrador">Questão Discursiva 1 - Cenário Integrador<a class="headerlink" href="#questao-discursiva-1-cenario-integrador" title="Permanent link">&para;</a></h3>
+<p>Contexto:</p>
+<p>Uma grande rede de varejo está modernizando sua arquitetura de dados. A empresa possui três necessidades distintas:</p>
+<blockquote>
+<p>Sistema de vendas (OLTP): Processa milhares de transações por segundo (vendas, atualização de estoque, cadastro de clientes). Requer consistência ACID e integridade referencial. O modelo de dados é estável e bem definido.</p>
+<p>Data Warehouse (OLAP): Armazena 10 anos de histórico de vendas (aproximadamente 5 PB) para consultas analíticas da diretoria (ex: "total de vendas por região e categoria nos últimos 5 anos"). Performance de consulta é crítica.</p>
+<p>Catálogo de produtos: Gerenciado pela equipe de marketing, onde cada produto pode ter atributos diferentes (ex: eletrônicos têm voltagem, roupas têm tamanho e cor, alimentos têm data de validade). O esquema muda frequentemente conforme novas categorias são adicionadas.</p>
+</blockquote>
+<p>Perguntas:</p>
+<p>a) Para cada uma das três necessidades, identifique o modelo de banco de dados mais adequado (Relacional/Tabular, Colunar, Orientado a Documentos) e justifique sua escolha com base nas características de cada modelo.</p>
+<p>b) A empresa está migrando para a AWS. Para cada necessidade, indique qual serviço AWS seria utilizado e explique brevemente sua função.</p>
+<p>c) Discuta uma vantagem e uma desvantagem de cada modelo de banco de dados no contexto apresentado.</p>
+<h3 id="questao-discursiva-2-cenario-de-migracao-e-decisao-arquitetural">Questão Discursiva 2 - Cenário de Migração e Decisão Arquitetural<a class="headerlink" href="#questao-discursiva-2-cenario-de-migracao-e-decisao-arquitetural" title="Permanent link">&para;</a></h3>
+<p>Contexto:</p>
+<p>Uma startup de logística está crescendo rapidamente. Atualmente, utiliza um banco de dados relacional (PostgreSQL) para todas as suas necessidades. No entanto, com o crescimento, surgiram desafios:</p>
+<blockquote>
+<p>Desafio 1: O sistema de rastreamento de entregas gera 1 milhão de eventos por hora (localização, status, temperatura). A tabela de eventos já tem 2 bilhões de linhas e as consultas analíticas estão cada vez mais lentas.</p>
+<p>Desafio 2: As frotas de caminhões têm diferentes configurações (cada caminhão pode ter sensores diferentes, manutenções em momentos diferentes, motoristas com diferentes certificações). A equipe de produtos precisa adicionar novos atributos frequentemente, e as migrations no PostgreSQL estão se tornando complexas e demoradas.</p>
+<p>Desafio 3: O sistema de cobrança e faturamento precisa garantir que cada entrega seja cobrada exatamente uma vez, com consistência absoluta entre as tabelas de entrega, rota e pagamento.</p>
+</blockquote>
+<p>A startup está avaliando uma arquitetura de poliglotia persistente (múltiplos bancos de dados especializados) e contratou você como consultor de dados.</p>
+<p>Perguntas:</p>
+<p>a) Proponha uma arquitetura de dados utilizando os três modelos de banco de dados (Relacional, Colunar, Orientado a Documentos) para atender aos três desafios. Justifique por que cada modelo é mais adequado para cada desafio específico.</p>
+<p>b) Considerando que a startup está na AWS, especifique quais serviços seriam utilizados para implementar cada modelo.</p>
+<p>c) A equipe levantou a preocupação de que a poliglotia persistente aumenta a complexidade operacional. Descreva duas estratégias para gerenciar essa complexidade (ex: ferramentas de orquestração, replicação de dados, API gateway unificado).</p>
+<p>d) Qual modelo de banco de dados NÃO seria adequado para o Desafio 1 (rastreamento de entregas) e por quê? Justifique com base nas características do modelo.</p>
 
 
 
