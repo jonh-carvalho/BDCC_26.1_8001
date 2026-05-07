@@ -6,7 +6,7 @@ hide:
 ---
 
 
-## :material-github:{ .lg .right } **Big Data & Cloud Computing**: 
+## :material-github:{ .lg .right } **Big Data e Cloud Computing**</span>**: 
 
 ---
 
