@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../02%20-%20aws/">
+        <link rel="prev" href="../10%20-%20aurora/">
       
       
-        <link rel="next" href="../04%20-%20linux/">
+        <link rel="next" href="../../../Avalia/">
       
       
       <link rel="icon" href="../../../assets/ibmec_icon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>EC2 - BDCC_26.1_8001</title>
+        <title>12 - EB MySQL - BDCC_26.1_8001</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#provisionando-sua-primeira-instancia-ec2-e-conectando-via-ssh" class="md-skip">
+        <a href="#django-rest-com-rds-mysql-integrado-ao-elastic-beanstalk" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              EC2
+              12 - EB MySQL
             
           </span>
         </div>
@@ -581,30 +581,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    04 - EC2
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../04%20-%20ec2/" class="md-nav__link">
         
   
   
@@ -615,102 +595,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#provisionando-sua-primeira-instancia-ec2-e-conectando-via-ssh" class="md-nav__link">
-    <span class="md-ellipsis">
-      Provisionando sua Primeira Instância EC2 e Conectando via SSH
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Provisionando sua Primeira Instância EC2 e Conectando via SSH">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#parte-1-conceitos-fundamentais-entendendo-o-que-vamos-fazer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parte 1: Conceitos Fundamentais (Entendendo o que vamos fazer)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parte-2-mao-na-massa-provisionando-a-instancia-ec2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parte 2: Mão na Massa - Provisionando a Instância EC2
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#parte-3-conectando-se-a-instancia-via-ssh" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parte 3: Conectando-se à Instância via SSH
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cenario-a-conectando-do-windows-usando-putty" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cenário A: Conectando do Windows (usando PuTTY)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cenario-b-conectando-do-macos-ou-linux-usando-terminal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cenário B: Conectando do macOS ou Linux (usando Terminal)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parte-4-explorando-e-finalizando" class="md-nav__link">
-    <span class="md-ellipsis">
-      Parte 4: Explorando e Finalizando
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resumo-e-checklist-de-boas-praticas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resumo e Checklist de Boas Práticas
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -835,10 +719,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../12%20-%20ebmysql/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    12 - EB MySQL
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -849,6 +755,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parte-0-preparacao-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Parte 0: Preparação inicial
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-1-ajustes-no-catalogosettingspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Parte 1: Ajustes no catalogo/settings.py
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-2-configuracao-do-elastic-beanstalk-com-rds-integrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Parte 2: Configuração do Elastic Beanstalk com RDS integrado
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 Parte 2: Configuração do Elastic Beanstalk com RDS integrado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opcao-a-criar-ambiente-eb-com-rds-integrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opção A: Criar ambiente EB com RDS integrado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcao-b-criar-ambiente-eb-e-anexar-rds-depois" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opção B: Criar ambiente EB e anexar RDS depois
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-3-ebextensions-e-procfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 Parte 3: .ebextensions e Procfile
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-4-teste-local-antes-do-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Parte 4: Teste local antes do deploy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-5-deploy-no-elastic-beanstalk" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Parte 5: Deploy no Elastic Beanstalk
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-final-para-rds-mysql-no-eb" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Checklist final para RDS MySQL no EB
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1229,199 +1242,166 @@
   
 
 
-  <h1>04 - EC2</h1>
-
-<h3 id="provisionando-sua-primeira-instancia-ec2-e-conectando-via-ssh">Provisionando sua Primeira Instância EC2 e Conectando via SSH<a class="headerlink" href="#provisionando-sua-primeira-instancia-ec2-e-conectando-via-ssh" title="Permanent link">&para;</a></h3>
-<p><strong>Objetivo:</strong> Ao final deste roteiro, o aluno terá provisionado (criado) sua primeira máquina virtual na AWS (uma instância EC2), configurado as regras de firewall para permitir acesso, e se conectado a ela de forma segura utilizando SSH, tanto no Windows quanto no macOS/Linux.</p>
-<p><strong>Pré-requisitos:</strong></p>
-<ul>
-<li>Conta no <strong>AWS</strong> ativa e aprovada.</li>
-<li>Navegador web para acessar o Console AWS.</li>
-<li>Para usuários Windows: software <strong>PuTTY</strong> instalado. (Recomendamos baixar o instalador completo em <a href="https://www.putty.org/">putty.org</a>).</li>
-<li>Para usuários macOS/Linux: o terminal já possui cliente SSH nativo.</li>
-</ul>
-<h4 id="parte-1-conceitos-fundamentais-entendendo-o-que-vamos-fazer"><strong>Parte 1:</strong> Conceitos Fundamentais (Entendendo o que vamos fazer)<a class="headerlink" href="#parte-1-conceitos-fundamentais-entendendo-o-que-vamos-fazer" title="Permanent link">&para;</a></h4>
-<p>Antes de colocar a mão no código, é crucial entender os componentes com os quais vamos interagir .</p>
-<ul>
-<li><strong>EC2 (Elastic Compute Cloud):</strong> É o serviço da AWS que permite criar e executar servidores virtuais na nuvem, chamados de <strong>instâncias</strong>. Pense neles como computadores que você aluga e que ficam rodando nos data centers da Amazon.</li>
-<li><strong>AMI (Amazon Machine Image):</strong> É um modelo pré-configurado para sua instância, contendo o sistema operacional e, muitas vezes, software pré-instalado. Escolher a AMI é como escolher o sistema operacional do seu computador (ex: Ubuntu, Amazon Linux, Windows Server).</li>
-<li><strong>Par de Chaves (Key Pair):</strong> Em vez de usar senhas, o Linux na AWS usa um sistema de criptografia de chaves para acesso SSH. Você terá um arquivo de chave <strong>privada</strong> (com extensão <code>.pem</code>) que deve ser guardado como um tesouro. A AWS guarda a chave <strong>pública</strong>. É a única maneira de acessar sua instância com segurança .</li>
-<li><strong>Security Group:</strong> É um firewall virtual para sua instância. Você define <strong>regras de entrada (inbound rules)</strong> para permitir tráfego em portas específicas, vindos de locais específicos (como seu IP). Por padrão, tudo é bloqueado. Para conectar via SSH, precisamos liberar a porta 22 .</li>
-<li><strong>SSH (Secure Shell):</strong> É o protocolo usado para acessar de forma segura o terminal de um servidor remoto. Através dele, você executa comandos como se estivesse sentado na frente da máquina.</li>
-</ul>
-<h4 id="parte-2-mao-na-massa-provisionando-a-instancia-ec2"><strong>Parte 2:</strong> Mão na Massa - Provisionando a Instância EC2<a class="headerlink" href="#parte-2-mao-na-massa-provisionando-a-instancia-ec2" title="Permanent link">&para;</a></h4>
-<p><strong>Passo 1:</strong> Acesse o Console AWS e vá para o EC2</p>
+<h1 id="django-rest-com-rds-mysql-integrado-ao-elastic-beanstalk">Django REST com RDS MySQL integrado ao Elastic Beanstalk<a class="headerlink" href="#django-rest-com-rds-mysql-integrado-ao-elastic-beanstalk" title="Permanent link">&para;</a></h1>
+<p>Este roteiro explica as alterações necessárias no projeto Django REST para usar um banco de dados MySQL no RDS acoplado ao Elastic Beanstalk.</p>
+<h3 id="parte-0-preparacao-inicial">🛠️ Parte 0: Preparação inicial<a class="headerlink" href="#parte-0-preparacao-inicial" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Faça login no Console AWS com sua conta do AWS.</li>
-<li>Na barra de pesquisa no topo da página, digite <strong>"EC2"</strong> e clique no primeiro resultado para abrir o painel do serviço EC2.</li>
+<li>Verifique que o projeto já tenha <code>mysqlclient</code> instalado em <code>requirements.txt</code>.</li>
+<li>No projeto atual há <code>mysqlclient==2.2.8</code>.</li>
+<li>Confirme que <code>gunicorn</code>, <code>Django</code>, <code>djangorestframework</code> e <code>pillow</code> também estão no <code>requirements.txt</code>.</li>
+<li>Certifique-se de que o Elastic Beanstalk está configurado para Python 3.12.</li>
 </ol>
-<p><strong>Passo 2:</strong> Inicie o Assistente de Criação</p>
-<ol>
-<li>No painel do EC2, localize e clique no botão laranja <strong>"Executar instância"</strong> .</li>
-</ol>
-<p><strong>Passo 3:</strong> Configure a Instância (Passo a passo do assistente)</p>
-<p>Siga estas configurações cuidadosamente:</p>
-<ul>
-<li>
-<p><strong>Nome e tags:</strong> Dê um nome à sua instância, como <code>"Meu-Primeiro-Servidor"</code>. Isso é apenas uma etiqueta para facilitar a identificação.</p>
-</li>
-<li>
-<p><strong>Escolha uma AMI (Imagem de máquina da Amazon):</strong> No campo "Imagens de máquina da Amazon (AMI)", selecione <strong>"Amazon Linux 2 AMI (HVM) - Kernel 5.10, SSD Volume Type"</strong> . Esta é uma ótima escolha para iniciantes, pois é leve, bem suportada e gratuita no Free Tier. Note que o nome de usuário padrão para esta AMI será <code>ec2-user</code> .</p>
-</li>
-<li>
-<p><strong>Tipo de instância:</strong> Em "Tipo de instância", certifique-se de que <strong><code>t2.micro</code></strong> (ou <code>t3.micro</code>) esteja selecionado. Esta é a opção do <strong>Free Tier</strong>, ou seja, não custará nada (dentro dos limites de 750 horas/mês) .</p>
-</li>
-<li>
-<p><strong>Par de chaves (login):</strong> Esta é a etapa mais importante para a segurança.</p>
-<ol>
-<li>No campo "Par de chaves", clique no menu suspenso e selecione <strong>"Criar novo par de chaves"</strong> .</li>
-<li>Dê a ele um nome, como <code>"Minha-Chave-EC2"</code>.</li>
-<li>Mantenha o <strong>"Tipo de par de chaves"</strong> como <strong>RSA</strong> e o <strong>"Formato de arquivo de chave privada"</strong> como <strong><code>.pem</code></strong> (para usuários de Mac/Linux) ou <strong><code>.ppk</code></strong> (se você for usar o PuTTY no Windows).</li>
-<li>Clique em <strong>"Criar par de chaves"</strong> .</li>
-<li><strong>IMPORTANTE:</strong> O arquivo da chave privada será baixado automaticamente para o seu computador. <strong>Guarde-o em uma pasta segura (ex: uma pasta chamada "aws-keys" dentro do seu diretório "Documentos") e não o perca.</strong> Esta é a única chance de baixar este arquivo .</li>
-</ol>
-</li>
-<li>
-<p><strong>Configurações de rede:</strong> Esta seção define o Security Group.</p>
-<ol>
-<li>Clique em <strong>"Editar"</strong> .</li>
-<li><strong>Firewall (grupos de segurança):</strong> Certifique-se de que a opção <strong>"Criar grupo de segurança"</strong> esteja selecionada.</li>
-<li>
-<p><strong>Regras de entrada (inbound rules):</strong> Vamos adicionar uma regra para permitir SSH.</p>
-<ul>
-<li>Clique em <strong>"Adicionar regra de segurança"</strong> .</li>
-<li><strong>Tipo:</strong> Selecione <strong>SSH</strong>.</li>
-<li><strong>Protocolo:</strong> Será automaticamente preenchido como TCP.</li>
-<li><strong>Intervalo de portas:</strong> Será automaticamente preenchido como <strong>22</strong>.</li>
-<li><strong>Tipo de origem:</strong> Selecione <strong>"Meu IP"</strong> . Isso é uma boa prática de segurança. O console detectará automaticamente seu endereço IP público e só permitirá conexões dele. Se você estiver em casa ou na faculdade com IP variável, pode, para fins de teste, selecionar <strong>"Qualquer lugar (0.0.0.0/0)"</strong> , mas isso é menos seguro .</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>
-<p><strong>Configurar armazenamento:</strong> Mantenha a configuração padrão: um volume raiz de 20 GiB do tipo <code>gp2</code> (SSD). Isso também é coberto pelo Free Tier .</p>
-</li>
-</ul>
-<p><strong>Passo 4:</strong> Revise e Inicie</p>
-<ol>
-<li>Revise todas as configurações no resumo à direita. Certifique-se de que o tipo de instância é <code>t2.micro</code>.</li>
-<li>Clique no botão <strong>"Executar instância"</strong> .</li>
-</ol>
-<p><strong>Passo 5:</strong> Visualize a Instância</p>
-<ol>
-<li>Você verá uma mensagem de sucesso. Clique no botão <strong>"Visualizar todas as instâncias"</strong> para voltar à lista de instâncias.</li>
-<li>Sua nova instância aparecerá na lista. Inicialmente, o "Status da instância" será <code>pending</code>. Aguarde um ou dois minutos até que o status mude para <strong><code>running</code></strong>.</li>
-<li>Selecione a instância (clicando no checkbox). No painel inferior, você verá os detalhes. Procure o campo <strong>"Endereço IPv4 público"</strong> . Copie este endereço IP, pois você precisará dele para se conectar via SSH .</li>
-</ol>
-<h4 id="parte-3-conectando-se-a-instancia-via-ssh"><strong>Parte 3:</strong> Conectando-se à Instância via SSH<a class="headerlink" href="#parte-3-conectando-se-a-instancia-via-ssh" title="Permanent link">&para;</a></h4>
-<p>Agora que a instância está rodando e temos o IP público, vamos nos conectar a ela usando a chave privada.</p>
-<h4 id="cenario-a-conectando-do-windows-usando-putty"><strong>Cenário A: Conectando do Windows (usando PuTTY)</strong><a class="headerlink" href="#cenario-a-conectando-do-windows-usando-putty" title="Permanent link">&para;</a></h4>
-<p>O PuTTY não entende nativamente o formato <code>.pem</code>. Precisamos converter a chave para o formato <code>.ppk</code> usando o PuTTYgen .</p>
-<p><strong>Passo 1:</strong> Converter a chave .pem para .ppk</p>
-<ol>
-<li>Abra o programa <strong>PuTTYgen</strong> (procure por ele no menu Iniciar).</li>
-<li>No canto inferior direito, clique no botão <strong>"Load"</strong> .</li>
-<li>Altere o filtro de arquivos para mostrar <strong>"All Files (<em>.</em>)"</strong> .</li>
-<li>Navegue até a pasta onde você salvou o arquivo <code>.pem</code> baixado da AWS, selecione-o e clique em <strong>"Abrir"</strong> .</li>
-<li>O PuTTYgen mostrará uma mensagem informando que a chave foi importada com sucesso. Clique em <strong>"OK"</strong> .</li>
-<li>Agora, clique no botão <strong>"Save private key"</strong> .</li>
-<li>Uma mensagem de aviso perguntará se você quer salvar a chave sem uma senha. Clique em <strong>"Sim"</strong> .</li>
-<li>Salve o arquivo com um nome (ex: <code>Minha-Chave-EC2.ppk</code>) na mesma pasta segura.</li>
-</ol>
-<p><strong>Passo 2:</strong> Conectar usando PuTTY</p>
-<ol>
-<li>Abra o <strong>PuTTY</strong>.</li>
-<li>No painel esquerdo (Category), vá em <strong>Connection &gt; SSH &gt; Auth</strong> (ou <strong>Auth &gt; Credentials</strong> em versões mais novas).</li>
-<li>Em "Private key file for authentication", clique em <strong>"Browse"</strong> e selecione o arquivo <code>.ppk</code> que você acabou de criar.</li>
-<li>Volte ao painel <strong>"Session"</strong> (no topo da árvore à esquerda).</li>
-<li>No campo <strong>"Host Name (or IP address)"</strong> , digite: <strong><code>ec2-user@&lt;Endereço-IPv4-Público&gt;</code></strong> . Substitua <code>&lt;Endereço-IPv4-Público&gt;</code> pelo IP que você copiou do console.</li>
-<li>Certifique-se de que a <strong>"Port"</strong> é <strong>22</strong> e o <strong>"Connection type"</strong> é <strong>SSH</strong>.</li>
-<li>Clique em <strong>"Open"</strong> .</li>
-<li>Na primeira vez que você se conectar a esta instância, uma alerta de segurança aparecerá sobre a chave do host não ser conhecida. Clique em <strong>"Accept"</strong> para continuar .</li>
-<li>Uma janela de terminal será aberta e você estará logado dentro da sua instância EC2!</li>
-</ol>
-<p><strong>Cenário B:</strong> Conectando do macOS ou Linux (usando Terminal)</p>
-<p><strong>Passo 1:</strong> Ajustar permissões da chave</p>
-<h4 id="cenario-b-conectando-do-macos-ou-linux-usando-terminal"><strong>Cenário B: Conectando do macOS ou Linux (usando Terminal)</strong><a class="headerlink" href="#cenario-b-conectando-do-macos-ou-linux-usando-terminal" title="Permanent link">&para;</a></h4>
-<p><strong>Passo 1: Ajustar permissões da chave</strong></p>
-<ol>
-<li>Abra o <strong>Terminal</strong>.</li>
-<li>Navegue até a pasta onde você salvou o arquivo <code>.pem</code> usando o comando <code>cd</code>. Por exemplo: <code>cd ~/Documentos/aws-keys/</code></li>
-<li>As chaves SSH precisam ter permissões restritas para serem aceitas. Execute o seguinte comando para garantir isso:</li>
-</ol>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span>chmod<span class="w"> </span><span class="m">400</span><span class="w"> </span>Minha-Chave-EC2.pem
+<h3 id="parte-1-ajustes-no-catalogosettingspy">🔧 Parte 1: Ajustes no <code>catalogo/settings.py</code><a class="headerlink" href="#parte-1-ajustes-no-catalogosettingspy" title="Permanent link">&para;</a></h3>
+<p>O código do projeto já está preparado para carregar o banco MySQL a partir de variáveis de ambiente. Use esta configuração principal em produção:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">BASE_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">DEBUG</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;DJANGO_DEBUG&#39;</span><span class="p">,</span> <span class="s1">&#39;True&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;True&#39;</span> <span class="k">else</span> <span class="kc">False</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">if</span> <span class="n">DEBUG</span><span class="p">:</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">DATABASES</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="p">{</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>            <span class="s1">&#39;ENGINE&#39;</span><span class="p">:</span> <span class="s1">&#39;django.db.backends.mysql&#39;</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            <span class="s1">&#39;NAME&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;MYSQL_DATABASE&#39;</span><span class="p">,</span> <span class="s1">&#39;catalogo&#39;</span><span class="p">),</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            <span class="s1">&#39;USER&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;MYSQL_USER&#39;</span><span class="p">,</span> <span class="s1">&#39;root&#39;</span><span class="p">),</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>            <span class="s1">&#39;PASSWORD&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;MYSQL_PASSWORD&#39;</span><span class="p">,</span> <span class="s1">&#39;123456&#39;</span><span class="p">),</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>            <span class="s1">&#39;HOST&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;MYSQL_HOST&#39;</span><span class="p">,</span> <span class="s1">&#39;127.0.0.1&#39;</span><span class="p">),</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            <span class="s1">&#39;PORT&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;MYSQL_PORT&#39;</span><span class="p">,</span> <span class="s1">&#39;3306&#39;</span><span class="p">),</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        <span class="p">}</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="p">}</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    <span class="n">DATABASES</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="p">{</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>            <span class="s1">&#39;ENGINE&#39;</span><span class="p">:</span> <span class="s1">&#39;django.db.backends.mysql&#39;</span><span class="p">,</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>            <span class="s1">&#39;NAME&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;RDS_DB_NAME&#39;</span><span class="p">,</span> <span class="s1">&#39;ebdb&#39;</span><span class="p">),</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>            <span class="s1">&#39;USER&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;RDS_USERNAME&#39;</span><span class="p">,</span> <span class="s1">&#39;ebroot&#39;</span><span class="p">),</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>            <span class="s1">&#39;PASSWORD&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;RDS_PASSWORD&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>            <span class="s1">&#39;HOST&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;RDS_HOSTNAME&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>            <span class="s1">&#39;PORT&#39;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;RDS_PORT&#39;</span><span class="p">,</span> <span class="s1">&#39;3306&#39;</span><span class="p">),</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>        <span class="p">}</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>    <span class="p">}</span>
 </span></code></pre></div>
-(Substitua <code>Minha-Chave-EC2.pem</code> pelo nome do seu arquivo) .</p>
-<p><strong>Passo 2:</strong> Conectar via SSH</p>
 <ol>
-<li>No mesmo terminal, execute o comando de conexão SSH:
-    <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ssh<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;Minha-Chave-EC2.pem&quot;</span><span class="w"> </span>ec2-user@&lt;Endereço-IPv4-Público&gt;
+<li>Mantenha <code>ALLOWED_HOSTS</code> configurado por variável de ambiente:</li>
+</ol>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">ALLOWED_HOSTS</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="s1">&#39;DJANGO_ALLOWED_HOSTS&#39;</span><span class="p">,</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="s1">&#39;localhost,127.0.0.1,.elasticbeanstalk.com&#39;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 </span></code></pre></div>
-    (Substitua o nome do arquivo e o IP pelos seus)</li>
-<li>Na primeira conexão, você verá uma mensagem perguntando se deseja continuar conectando, pois a autenticidade do host não pode ser estabelecida. Digite <strong><code>yes</code></strong> e pressione Enter .</li>
-<li>Pronto! Você estará conectado ao terminal da sua instância EC2.</li>
-</ol>
-<p><strong>Cenário C:</strong> Conectando do Windows, macOS ou Linux (usando VS Code)</p>
-<p>VS Code oferece uma forma moderna e integrada de se conectar a servidores remotos via SSH, permitindo editar arquivos e executar comandos diretamente do editor.</p>
-<p><strong>Pré-requisitos:</strong></p>
-<ul>
-<li>VS Code instalado em seu computador.</li>
-<li>Extensão <strong>"Remote - SSH"</strong> instalada (abra VS Code, vá em Extensions e procure por "Remote - SSH" da Microsoft).</li>
-</ul>
-<p><strong>Passo 1:</strong> Configurar a Conexão SSH no VS Code</p>
 <ol>
-<li>Abra VS Code.</li>
-<li>Pressione <strong>Ctrl+Shift+P</strong> (ou <strong>Cmd+Shift+P</strong> no macOS) para abrir a Paleta de Comandos.</li>
-<li>Digite <strong>"Remote-SSH: Open Configuration File"</strong> e selecione a opção.</li>
-<li>Escolha ou crie o arquivo de configuração SSH (geralmente em <code>~/.ssh/config</code>).</li>
-<li>Adicione as seguintes linhas ao arquivo:</li>
+<li>Em produção, use <code>DEBUG=False</code> no EB.</li>
 </ol>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>    Host meu-ec2
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>        HostName &lt;Endereço-IPv4-Público&gt;
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        User ec2-user
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        IdentityFile &lt;Caminho-para-sua-chave&gt;.pem
+<h3 id="parte-2-configuracao-do-elastic-beanstalk-com-rds-integrado">📦 Parte 2: Configuração do Elastic Beanstalk com RDS integrado<a class="headerlink" href="#parte-2-configuracao-do-elastic-beanstalk-com-rds-integrado" title="Permanent link">&para;</a></h3>
+<h4 id="opcao-a-criar-ambiente-eb-com-rds-integrado">Opção A: Criar ambiente EB com RDS integrado<a class="headerlink" href="#opcao-a-criar-ambiente-eb-com-rds-integrado" title="Permanent link">&para;</a></h4>
+<ol>
+<li>No console Elastic Beanstalk, crie um novo ambiente Python.</li>
+<li>Durante a criação do ambiente, em <strong>Database</strong>, adicione um banco de dados MySQL.</li>
+<li>Defina:</li>
+<li>Engine: MySQL</li>
+<li>Version: compatível com seu projeto</li>
+<li>DB instance class: <code>db.t4g.micro</code> ou similar para laboratório</li>
+<li>Storage: 20 GiB ou conforme necessário</li>
+<li>Complete a criação do ambiente.</li>
+</ol>
+<p>Quando o ambiente for criado, o Beanstalk fornecerá automaticamente variáveis de ambiente:
+- <code>RDS_DB_NAME</code>
+- <code>RDS_USERNAME</code>
+- <code>RDS_PASSWORD</code>
+- <code>RDS_HOSTNAME</code>
+- <code>RDS_PORT</code></p>
+<h4 id="opcao-b-criar-ambiente-eb-e-anexar-rds-depois">Opção B: Criar ambiente EB e anexar RDS depois<a class="headerlink" href="#opcao-b-criar-ambiente-eb-e-anexar-rds-depois" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Crie o banco RDS MySQL separadamente no console AWS.</li>
+<li>No ambiente EB, abra <strong>Configuration &gt; Software</strong>.</li>
+<li>Adicione as variáveis de ambiente abaixo com os valores do RDS:</li>
+<li><code>RDS_DB_NAME</code></li>
+<li><code>RDS_USERNAME</code></li>
+<li><code>RDS_PASSWORD</code></li>
+<li><code>RDS_HOSTNAME</code></li>
+<li><code>RDS_PORT</code></li>
+<li><code>DJANGO_DEBUG=False</code></li>
+<li><code>DJANGO_ALLOWED_HOSTS=&lt;seu-dominio&gt;,.elasticbeanstalk.com</code></li>
+</ol>
+<h3 id="parte-3-ebextensions-e-procfile">📄 Parte 3: <code>.ebextensions</code> e <code>Procfile</code><a class="headerlink" href="#parte-3-ebextensions-e-procfile" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Garanta que seu <code>Procfile</code> esteja assim:</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>web: gunicorn catalogo.wsgi:application --bind 127.0.0.1:8000
 </span></code></pre></div>
-<div class="language-text highlight"><pre><span></span><code>Substitua `&lt;Endereço-IPv4-Público&gt;` pelo IP da sua instância e `&lt;Caminho-para-sua-chave&gt;` pelo caminho completo do arquivo `.pem`.
-</code></pre></div>
 <ol>
-<li>Salve o arquivo.</li>
+<li>No <code>.ebextensions/django.config</code>, inclua comandos para migrar o banco e coletar estáticos:</li>
 </ol>
-<p><strong>Passo 2:</strong> Conectar à Instância</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">option_settings</span><span class="p">:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">aws:elasticbeanstalk:container:python</span><span class="p">:</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">WSGIPath</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">catalogo/wsgi.py</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">aws:elasticbeanstalk:application:environment</span><span class="p">:</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nt">DJANGO_SETTINGS_MODULE</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">catalogo.settings</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nt">DJANGO_DEBUG</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">False</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="nt">aws:elasticbeanstalk:environment:proxy:staticfiles</span><span class="p">:</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="nt">/static</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">staticfiles</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="nt">/media</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">media</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="nt">container_commands</span><span class="p">:</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span><span class="nt">01_migrate</span><span class="p">:</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;python</span><span class="nv"> </span><span class="s">manage.py</span><span class="nv"> </span><span class="s">migrate</span><span class="nv"> </span><span class="s">--noinput&quot;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="nt">leader_only</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">  </span><span class="nt">02_collectstatic</span><span class="p">:</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;python</span><span class="nv"> </span><span class="s">manage.py</span><span class="nv"> </span><span class="s">collectstatic</span><span class="nv"> </span><span class="s">--noinput&quot;</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="nt">leader_only</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span></code></pre></div>
 <ol>
-<li>Na Paleta de Comandos, digite <strong>"Remote-SSH: Connect to Host"</strong> e selecione.</li>
-<li>Escolha <code>meu-ec2</code> da lista.</li>
-<li>Uma nova janela do VS Code será aberta conectada ao servidor remoto.</li>
-<li>Na primeira conexão, aceite a chave do host quando solicitado.</li>
-<li>Agora você pode explorar os arquivos, editar código e executar comandos no terminal integrado do VS Code, tudo conectado à sua instância EC2!</li>
+<li>Não é necessário setar explicitamente as variáveis <code>RDS_*</code> no <code>.ebextensions</code> se o banco for criado pelo próprio EB, porque elas já são injetadas no ambiente.</li>
 </ol>
-<p><strong>Dica:</strong> Você pode abrir o terminal integrado (Ctrl+`) para executar comandos Linux diretamente na instância.</p>
-<h3 id="parte-4-explorando-e-finalizando"><strong>Parte 4:</strong> Explorando e Finalizando<a class="headerlink" href="#parte-4-explorando-e-finalizando" title="Permanent link">&para;</a></h3>
-<p><strong>O que fazer depois de conectar:</strong></p>
-<ul>
-<li>Você está dentro do servidor! Experimente alguns comandos básicos para se familiarizar:<ul>
-<li><code>pwd</code> (print working directory): Mostra em qual diretório você está.</li>
-<li><code>ls</code> (list): Lista os arquivos da pasta atual.</li>
-<li><code>df -h</code> (disk free): Mostra o espaço em disco.</li>
-<li><code>sudo yum update -y</code> (atualiza o sistema - específico para Amazon Linux).</li>
-</ul>
+<h3 id="parte-4-teste-local-antes-do-deploy">🧪 Parte 4: Teste local antes do deploy<a class="headerlink" href="#parte-4-teste-local-antes-do-deploy" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Instale as dependências:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span></code></pre></div></li>
+<li>Se usar MySQL local, verifique o servidor MySQL e configure as variáveis:</li>
+<li><code>MYSQL_DATABASE</code></li>
+<li><code>MYSQL_USER</code></li>
+<li><code>MYSQL_PASSWORD</code></li>
+<li><code>MYSQL_HOST</code></li>
+<li>
+<p><code>MYSQL_PORT</code></p>
 </li>
-</ul>
-<p><strong>IMPORTANTE:</strong> Como parar a instância para não gastar créditos</p>
-<p>Lembre-se: no AWS Educate, você tem créditos limitados. A instância <code>t2.micro</code> em execução consome esses créditos. Quando não estiver usando, é fundamental <strong>parar (stop)</strong> a instância .</p>
-<ol>
-<li>No Console AWS, vá para a lista de instâncias EC2.</li>
-<li>Selecione sua instância.</li>
-<li>Clique no menu <strong>"Estado da instância"</strong> e escolha <strong>"Parar instância"</strong> .</li>
-<li>Confirme. A instância será desligada e você não será cobrado enquanto ela estiver parada.</li>
-<li>Para usá-la novamente, basta selecioná-la e clicar em <strong>"Iniciar instância"</strong> (atenção: o IP público pode mudar ao reiniciar, a menos que você tenha um IP elástico).</li>
+<li>
+<p>Rode as migrações:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>migrate
+</span></code></pre></div></p>
+</li>
+<li>Inicie o servidor:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>runserver
+</span></code></pre></div></li>
 </ol>
-<h3 id="resumo-e-checklist-de-boas-praticas"><strong>Resumo</strong> e Checklist de Boas Práticas<a class="headerlink" href="#resumo-e-checklist-de-boas-praticas" title="Permanent link">&para;</a></h3>
+<h3 id="parte-5-deploy-no-elastic-beanstalk">🚀 Parte 5: Deploy no Elastic Beanstalk<a class="headerlink" href="#parte-5-deploy-no-elastic-beanstalk" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Gere o ZIP do projeto com arquivos na raiz (sem pasta pai).</li>
+<li>Não inclua:</li>
+<li><code>venv/</code> ou <code>.venv/</code></li>
+<li><code>.git/</code></li>
+<li><code>db.sqlite3</code></li>
+<li><code>__pycache__/</code></li>
+<li><code>.env</code></li>
+<li>Faça o upload para o EB.</li>
+<li>Verifique se o ambiente está <code>Green</code>.</li>
+<li>Acesse:</li>
+<li><code>https://&lt;seu-dominio&gt;/</code></li>
+<li><code>https://&lt;seu-dominio&gt;/api/produtos/</code></li>
+</ol>
+<h3 id="checklist-final-para-rds-mysql-no-eb">✅ Checklist final para RDS MySQL no EB<a class="headerlink" href="#checklist-final-para-rds-mysql-no-eb" title="Permanent link">&para;</a></h3>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Sempre use um par de chaves:** Nunca habilite acesso por senha .</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Mantenha sua chave privada em local seguro e com permissões restritas** (<code>chmod 400</code> no Mac/Linux) .</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Configure o Security Group para permitir SSH apenas do seu IP** (origem <code>Meu IP</code>), evitando acesso de qualquer lugar da internet .</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> PARE a instância** quando não estiver utilizando para otimizar seus créditos .</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Explore o terminal da sua instância** e familiarize-se com os comandos básicos do Linux.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>requirements.txt</code> contém <code>mysqlclient</code> e <code>gunicorn</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>catalogo/settings.py</code> usa <code>django.db.backends.mysql</code> em produção</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>DEBUG=False</code> no ambiente EB</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>DJANGO_ALLOWED_HOSTS</code> configurado corretamente</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>.ebextensions/django.config</code> executa migrate e collectstatic</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> RDS integrado criado pelo Beanstalk ou variáveis <code>RDS_*</code> definidas manualmente</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> ZIP de deploy não contém <code>db.sqlite3</code>, <code>venv</code>, <code>.git</code> ou arquivos sensíveis</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Ambiente EB ficou <code>Green</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Endpoints <code>healthcheck</code> e <code>/api/produtos/</code> respondem corretamente</li>
 </ul>
 
 
@@ -1429,9 +1409,6 @@
 
 
 
-
-  
-  
 
 
 
