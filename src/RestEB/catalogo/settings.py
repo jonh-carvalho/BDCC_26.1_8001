@@ -36,7 +36,7 @@ else:
             'ENGINE': 'django.db.backends.mysql',
             'NAME': os.getenv('RDS_DB_NAME', 'ebdb'),
             'USER': os.getenv('RDS_USERNAME', 'ebroot'),
-            'PASSWORD': os.getenv('RDS_PASSWORD', 'EM_j2606f'),
+            'PASSWORD': os.getenv('RDS_PASSWORD', 'xxxxx'),
             'HOST': os.getenv('RDS_HOSTNAME', 'awseb-e-mbxs5wb9z8-stack-awsebrdsdatabase-uodz22wcnmll.cuj2q0ya6uad.us-east-1.rds.amazonaws.com'),
             'PORT': os.getenv('RDS_PORT', '3306'),
         }
