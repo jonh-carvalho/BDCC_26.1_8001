@@ -85,35 +85,6 @@ Você já possui um projeto Django Rest com as entidades da AP1 (incluindo `Prod
 	- Upload e leitura de mídia no S3
 	- Conectividade com RDS
 
-### Parte 5 - Extensão opcional: JSONB com JSONField
-
-Objetivo: aplicar um aspecto orientado a documento dentro do PostgreSQL para atributos variáveis do e-commerce.
-
-1. Adicionar no modelo `Produto` (ou modelo relacionado) um campo `JSONField` para metadados dinâmicos.
-2. Persistir esse campo no PostgreSQL (tipo `JSONB`).
-3. Implementar ao menos 2 consultas filtrando dados dentro do JSON (ex.: marca, RAM, cor, tamanho, especificações técnicas).
-4. Demonstrar um caso combinado de filtro relacional + JSON (ex.: categoria + atributo do JSON).
-
-Exemplo de estrutura esperada para o campo JSON:
-
-```json
-{
-	"marca": "Dell",
-	"ram_gb": 16,
-	"cor": "preto",
-	"especificacoes": {
-		"cpu": "i7",
-		"armazenamento": "512GB SSD"
-	}
-}
-```
-
-Evidências desta parte opcional:
-
-- Print de um registro salvo com JSONField preenchido.
-- Print de ao menos 2 consultas com filtros no JSON.
-- Breve explicação no README sobre quando usar campo relacional e quando usar JSONField.
-
 ## Evidências Obrigatórias
 
 - URL pública da API funcionando
@@ -171,7 +142,6 @@ Evidências desta parte opcional:
 - Tratamento de erros de upload e validações adicionais
 - Checklist de troubleshooting no README
 - Script/comando de bootstrap para facilitar setup local
-- Uso de `JSONField` no Django com consultas em `JSONB` no PostgreSQL (até +1,0 ponto)
 
 ## Referências
 
