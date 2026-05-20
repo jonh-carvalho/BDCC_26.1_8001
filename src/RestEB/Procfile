@@ -1,1 +1,1 @@
-web: gunicorn catalogo.wsgi:application --bind 127.0.0.1:8000
+web: gunicorn catalogo.wsgi:application --bind 0.0.0.0:8000
